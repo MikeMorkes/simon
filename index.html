@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game Emulator</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+      <div class="container">
+  <div class="row">
+    <div class="col-md-3" style="background-color: #000000;"></div>
+    <div class="col-md-12 base drop">
+      <div class="controls">
+        <h1 class="name">simon<span style="font-size: 50%;"><sup>&#174;</sup></span></h1>
+        <div class="control-row">
+          <div class="counter">
+            COUNTER
+            <div class="display"> <div id="display-count" class="display-count">00</div></div>
+          </div>
+          <div class="start">
+            START
+            <button class="start-btn" id="start" type="button" onclick="playGame()"></button>
+          </div>
+          <div class="strict">
+            STRICT
+            <button class="strict-btn" id="strict-button" onclick="strictBtn()"></button>
+            <button class="strict-btn-on" id="strict-button-on" onclick="strictBtnOn()"></button>
+          </div>
+        </div>
+        <div class="control-row">
+          <div class="on">ON</div>
+          <div class="switch">
+            <div id="switch" class="switch-button" onclick="switchBtn()"></div>
+            <div id="switchoff" class="switch-button-on" onclick="switchBtnOff()"></div>
+          </div>
+          <div class="off">OFF</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="game">
+          <div class="green-btn" id="green-button">
+            <img src="http://www.mikemorkes.com/codepen/simon/green_btn_off.png" width="300" height="300" id="btn_0" onclick="btn_click(0)">
+          </div>
+          <div class="red-btn" id="red-button">
+            <img src="http://www.mikemorkes.com/codepen/simon/red_btn_off.png" width="300" height="300" id="btn_1" onclick="btn_click(1)">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="yellow-btn" id="yellow-button">
+            <img src="http://www.mikemorkes.com/codepen/simon/yellow_btn_off.png" width="300" height="300" id="btn_2" onclick="btn_click(2)">
+          </div>
+          <div class="blue-btn" id="blue-button">
+            <img src="http://www.mikemorkes.com/codepen/simon/blue_btn_off.png" width="300" height="300" id="btn_3" onclick="btn_click(3)">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+    <div style="display: none;"><form id="my_form">
+                    Round: <input id="seq_len" type="text" size="2">
+      </form></div>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

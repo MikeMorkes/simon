@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,700|Roboto+Condensed:400,700);
+
+body { /* background is from https://newevolutiondesigns.com/50-hd-retro-wallpapers */
+  background: #7c0704 url('http://www.mikemorkes.com/codepen/simon/retro-stripes-background.jpg') no-repeat fixed bottom center / cover;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+.base {
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #292a2d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #292a2d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #292a2d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292a2d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  margin: 100px auto 0;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  padding: 0 !important;
+  box-shadow: inset 4px 4px 20px #666;
+}
+
+.controls {
+background: #e2e2e2; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  border-radius: 100%;
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  z-index: 1000000;
+  top: 188px;
+  left: 188px;
+  margin: 0;
+}
+
+.name {
+  font-family: 'Roboto Slab', serif; 
+  text-align: center;
+  margin: 30px auto 10px;
+  font-size: 50px;
+}
+
+.control-row {
+  width: 220px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+.counter {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 11px;
+}
+
+.display {
+  width: 60%;
+  height: 33px;
+  border-radius: 8px;
+  background-color: #33050b;
+  margin: 5px auto;
+  color: #c12900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.display-count {
+    display: none;
+}
+
+.start {
+  float: left;
+  width: 35px;
+  text-align: center;  
+  font-size: 11px;  
+}
+
+.start-btn {
+  border-radius: 100%;
+  border: 3px solid #333;
+  width: 25px;
+  height: 25px;
+  background-color: #009341;
+  margin: 5px auto 0;
+  cursor:pointer;
+}
+
+.strict {
+  float: left;
+  width: 55px;
+  text-align: center;  
+  font-size: 11px;  
+}
+
+.strict-btn {
+  border-radius: 100%;
+  border: 3px solid #333;
+  width: 25px;
+  height: 25px;
+  background-color: #7c0704;
+  margin: 5px auto 0;
+  cursor:pointer;
+  display: block;
+}
+
+.strict-btn-on {
+  border-radius: 100%;
+  border: 3px solid #333;
+  width: 25px;
+  height: 25px;
+  background-color: #ef0600;
+  margin: 5px auto 0;
+  cursor:pointer;  
+  display: none;
+}
+
+.on {
+  float: left;
+  width: 67px;
+  text-align: right;  
+  font-size: 11px;  
+}
+
+.switch {
+  float: left;
+  width: 62px;
+  text-align: center;  
+  background-color: #333;
+  margin: 0 10px;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.switch-button {
+  width: 20px;
+  height: 20px;
+  background-color: #7c0704;
+  margin-left: 36px;
+  cursor:pointer;  
+}
+
+.switch-button-on {
+  width: 20px;
+  height: 20px;
+  background-color: #7c0704;
+  cursor:pointer; 
+  display: none;
+}
+
+.off {
+  float: left;
+  width: 67px;
+  text-align: left;  
+  font-size: 11px;  
+}
+
+.btn-shadow {
+      -webkit-filter: drop-shadow( 0 0 10px #000 );
+            filter: drop-shadow( 0 0 10px #000 );
+}
+
+.green-btn {
+  width: 280px;
+  height: 280px;
+  margin: 3px 0 10px 5px;
+  float: left;
+  cursor:pointer;
+}
+
+.red-btn {
+  width: 280px;
+  height: 280px;
+  margin: 3px 0 0 10px;
+  float: left;
+  cursor:pointer;
+}
+
+.yellow-btn {
+  width: 280px;
+  height: 280px;
+  margin: 0 0 0 5px;
+  float: left;
+  cursor:pointer;
+}
+
+
+.blue-btn {
+  width: 280px;
+  height: 280px;
+  border-radius: 0% 10px 100% 10px;
+  margin: 0 0 0 10px;
+  float: left;
+  cursor:pointer;
+}
+
+input:focus,
+I select:focus,
+textarea:focus,
+button:focus {
+	outline: none !important;
+}
