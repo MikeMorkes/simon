@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:400,700|Roboto+Condensed:400,700);
 
 body { /* background is from https://newevolutiondesigns.com/50-hd-retro-wallpapers */
-  background: #7c0704 url('http://www.mikemorkes.com/codepen/simon/retro-stripes-background.jpg') no-repeat fixed bottom center / cover;
+  background: #7c0704 url('../img/retro-stripes-background.jpg') no-repeat fixed bottom center / cover;
   font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 }
 
