@@ -34,9 +34,9 @@ function switchBtnOff() {
 
 // set up the button images
 function initializebtnImages() {
-  simon.imgOff = ["http://www.mikemorkes.com/codepen/simon/green_btn_off.png", "http://www.mikemorkes.com/codepen/simon/red_btn_off.png", "http://www.mikemorkes.com/codepen/simon/yellow_btn_off.png", "http://www.mikemorkes.com/codepen/simon/blue_btn_off.png"];
+  simon.imgOff = ["../simon/img/green_btn_off.png", "../simon/img/red_btn_off.png", "../simon/img/yellow_btn_off.png", "../simon/img/blue_btn_off.png"];
 
-  simon.imgOn = ["http://www.mikemorkes.com/codepen/simon/green_btn_on.png", "http://www.mikemorkes.com/codepen/simon/red_btn_on.png", "http://www.mikemorkes.com/codepen/simon/yellow_btn_on.png", "http://www.mikemorkes.com/codepen/simon/blue_btn_on.png"];
+  simon.imgOn = ["../simon/img/green_btn_on.png", "../simon/img/red_btn_on.png", "../simon/img/yellow_btn_on.png", "../simon/img/blue_btn_on.png"];
 
   simon.imgDelay = 800; // sets up how long light comes on
 }
@@ -44,14 +44,14 @@ function initializebtnImages() {
 // set up the sounds
 function initializeSounds() {
   // win/error tones
-  simon.successSound = new Audio("http://www.mikemorkes.com/codepen/simon/sounds/tada.wav");
-  simon.failureSound = new Audio("http://www.mikemorkes.com/codepen/simon/sounds/buzzerheavy.wav");
+  simon.successSound = new Audio("../simon/sounds/tada.wav");
+  simon.failureSound = new Audio("../simon/sounds/buzzerheavy.wav");
   
   //button tones
-  simon.btnSound = [new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"),
-    new Audio("http://www.mikemorkes.com/codepen/simon/sounds/simonSound3.mp3"),
-    new Audio("http://www.mikemorkes.com/codepen/simon/sounds/simonSound2.mp3"),
-    new Audio("http://www.mikemorkes.com/codepen/simon/sounds/simonSound1.mp3")
+  simon.btnSound = [new Audio("../simon/sounds/simonSound4.mp3"),
+    new Audio("../simon/sounds/simonSound3.mp3"),
+    new Audio("../simon/sounds/simonSound2.mp3"),
+    new Audio("../simon/sounds/simonSound1.mp3")
   ];
 
 }
